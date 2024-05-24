@@ -1,0 +1,223 @@
+from sqlalchemy import Column, String, BigInteger, Integer, Date
+
+from Model.Model import Base
+
+
+class BaseDocumentView(Base):
+    __abstract__ = True
+
+
+class Thomas(BaseDocumentView):
+    __tablename__ = 'thomas'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Aurelie(BaseDocumentView):
+    __tablename__ = 'aurelie'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Karen(BaseDocumentView):
+    __tablename__ = 'karen'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Estelle(BaseDocumentView):
+    __tablename__ = 'estelle'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Elise(BaseDocumentView):
+    __tablename__ = 'elise'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Elodie(BaseDocumentView):
+    __tablename__ = 'elodie'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Florent(BaseDocumentView):
+    __tablename__ = 'florent'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Raphael(BaseDocumentView):
+    __tablename__ = 'raphael'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
+
+
+class Null(BaseDocumentView):
+    __tablename__ = 'null'
+    ID = Column(String(25), primary_key=True)
+    NUMERO_PROJET = Column(String(20))
+    NUMERO_COMMANDE = Column(BigInteger)
+    LIGNE = Column(Integer)
+    RELEASE = Column(String(5))
+    FOURNISSEUR = Column(String(100))
+    DATE_RECEPTION_MATERIEL = Column(Date)
+    DATE_OBTENTION_DOC = Column(Date)
+    DESCRIPTION = Column(String(150))
+    ITEM_CODE = Column(String(30))
+    STATUT = Column(String(50))
+    COMMENTAIRES = Column(String(100))
+    CONSULTANT = Column(String(30))
+    ORIGINE_DOC = Column(String(10))
+    HOROD_CONTROLE_VALIDE_SYSTEME = Column(Date)
+    HOROD_CONTROLE_VALIDE_CELLULE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_FOURNISSEUR = Column(Date)
+    HOROD_ATTENTE_DOC = Column(Date)
+    HOROD_ATTENTE_RETOUR_INTERNE = Column(Date)
+    HOROD_LIGNE_INVALIDABLE = Column(Date)
